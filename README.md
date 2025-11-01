@@ -188,3 +188,66 @@ def find_similar_images(query_image_path, top_n=5):
 
 ```
 
+---
+
+## How to Run
+
+### <ins>Install Requirements</ins>
+
+```python
+pip install -r requirements.txt
+```
+
+### <ins>Prepare Dataset</ins>
+
+#### Place images into:
+
+```python
+data/raw/
+```
+
+### <ins>Extract Embeddings & Build FAISS Index</ins>
+
+```python
+python src/build_faiss_index.py
+```
+
+### <ins>Query Similar Images</ins>
+
+```python
+python src/query_similar_images.py --image path/to/test.jpg
+```
+
+### <ins>Streamlit Visual Search UI</ins>
+```python
+streamlit run app/streamlit_visual_search.py
+```
+
+
+---
+
+## Enterprise Expansion Ideas
+
+
+| Feature | Benefit |
+|---------|---------|
+| Add metadata store (PostgreSQL / Milvus Hybrid) | store engineer notes + corrective actions |
+| Deploy as REST API + Authentication | internal engineering portal |
+| Use Vector-DB cloud providers | Pinecone, Weaviate, Milvus |
+| Integrate LLMs | Generate recommended corrective actions + knowledge mining |
+| Vision Transformers | Improve accuracy vs VGG16 |
+| MLflow / Kubeflow | Versioning & deployment automation |
+
+
+---
+
+## Future Work with LLMs
+
+| LLM Enhancement | Description |
+|-----------------|-------------|
+| Fault Reasoning Agent | Explain root cause using retrieved history |
+| Multi-modal RAG | Combine image embeddings + document embeddings |
+| Chatbot for Engineers | Ask natural-language questions ("similar crack patterns in 2023?") |
+
+
+
