@@ -1,4 +1,4 @@
-# Enterprise Image Fault Diagnosis & Visual Similarity Search
+# Enterprise Image based Fault Diagnosis & Visual Similarity Search Using Deep Learning and FAISS Vector Database
 
 ## Project Summary
 
