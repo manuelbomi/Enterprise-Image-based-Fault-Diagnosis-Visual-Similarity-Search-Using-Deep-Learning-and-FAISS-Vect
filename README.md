@@ -117,7 +117,7 @@ enterprise-image-fault-diagnosis/
 - FAISS to build/query vector index
 - 
 
-#### The mina cod ei sprovided belwo: 
+#### The main code is provided below: 
 
 ```python
 import numpy as np
