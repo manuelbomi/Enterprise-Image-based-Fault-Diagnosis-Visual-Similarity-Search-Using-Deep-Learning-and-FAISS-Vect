@@ -1,0 +1,10 @@
+# Optional GPU acceleration.
+#
+# faiss-cpu and faiss-gpu both install the same `faiss` module, so use one or
+# the other, on a machine with an NVIDIA GPU and matching CUDA/cuDNN:
+#
+#   pip install -r requirements.txt
+#   pip uninstall faiss-cpu
+#   pip install -r requirements-gpu.txt
+faiss-gpu
+nvidia-cudnn-cu12

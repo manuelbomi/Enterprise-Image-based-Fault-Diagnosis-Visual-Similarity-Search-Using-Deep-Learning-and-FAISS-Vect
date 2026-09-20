@@ -1,9 +1,21 @@
-tensorflow>=2.8
 numpy
 pillow
-faiss-cpu
-scikit-learn
-streamlit
 opencv-python
 pandas
 tqdm
+scikit-learn
+joblib
+
+# Deep learning (CPU build; for GPU acceleration see requirements-gpu.txt)
+tensorflow==2.15.0
+
+# Vector search (CPU build; for GPU acceleration see requirements-gpu.txt)
+faiss-cpu
+
+# Existing Streamlit UI (app/streamlit_visual_search.py)
+streamlit
+
+# REST API backing the React/TypeScript frontend in frontend/ (see api/)
+fastapi
+uvicorn[standard]
+python-multipart

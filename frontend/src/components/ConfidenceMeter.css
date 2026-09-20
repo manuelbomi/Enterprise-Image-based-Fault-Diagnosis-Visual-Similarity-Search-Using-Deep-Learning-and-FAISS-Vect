@@ -1,0 +1,48 @@
+.confidence-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.confidence-meter-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.predicted-label {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.predicted-pct {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.confidence-meter-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--grid);
+  overflow: hidden;
+}
+
+.confidence-meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.confidence-meter-fill.good {
+  background: var(--status-good);
+}
+
+.confidence-meter-fill.warning {
+  background: var(--status-warning);
+}
+
+.confidence-meter-fill.critical {
+  background: var(--status-critical);
+}

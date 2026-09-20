@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated data & ML artifacts (re-created by the Quickstart scripts -- see README)
+data/raw/
+data/processed/
+data/faiss_index/
+data/temp_query.jpg
+
+# Frontend (see frontend/.gitignore for its own build output/node_modules)
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# OS
+.DS_Store
